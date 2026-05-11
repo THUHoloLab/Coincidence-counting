@@ -10,7 +10,7 @@
 This work demonstrates array-based coincidence counting with joint probability analysis to directly extract the spatial correlations of entangled photon pairs. The ability of array detectors to simultaneously provide both arrival-time and spatial information enables multidimensional correlation filtering and facilitates sub-shot-noise imaging. The code selectively identifies genuine photon-pair events while effectively suppressing uncorrelated background photons and detector noise. The output coincidence map (CM) directly reveals the underlying spatial correlation structure of the entangled photon pairs, providing a high-fidelity representation of their quantum correlations and serving as a robust foundation for advanced applications such as quantum imaging and quantum metrology.
 
 <p align="left">
-<img src="Theory.jpg", width='800'>
+<img src="imgs/Theory.jpg", width='800'>
 </p>
 
 ## Reference
@@ -24,7 +24,7 @@ This work demonstrates array-based coincidence counting with joint probability a
 -  Only coincident detections, which occur within the same frame at two spatially symmetric pixels, contribute to the correlation signal. For entangled photon pairs generated via spontaneous parametric down-conversion (SPDC), this method isolates the non-classical correlations that uniquely reveal the pairwise nature of the photon emission process. In quantum imaging, this coincidence counting approach preferentially selects correlated photon-pair events while suppressing uncorrelated background light and detector noise. The one-dimensional joint probability distribution (JPD) and two-dimensional CM provide a statistical framework that improves robustness of coincidence extraction and information retrieval for quantum Gabor holography (QGH). 
 
 <p align="left">
-<img src="Coincidence_Counting.jpg", width='800'>
+<img src="imgs/Coincidence_Counting.jpg", width='800'>
 <p align="left">
 
 ## Source
