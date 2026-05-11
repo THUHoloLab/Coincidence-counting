@@ -7,35 +7,24 @@
 
 </div>
 
-This work demonstrates array-based coincidence counting with joint probability analysis to directly extract the spatial correlations of entangled photon pairs. The ability of array detectors to simultaneously provide both arrival-time and spatial information enables multidimensional correlation filtering and facilitates sub-shot-noise imaging. The code selectively identifies genuine photon-pair events while effectively suppressing uncorrelated background photons and detector noise. The output coincidence map directly reveals the underlying spatial correlation structure of the entangled photon pairs, providing a high-fidelity representation of their quantum correlations and serving as a robust foundation for advanced applications such as quantum imaging and quantum metrology.
+This work demonstrates array-based coincidence counting with joint probability analysis to directly extract the spatial correlations of entangled photon pairs. The ability of array detectors to simultaneously provide both arrival-time and spatial information enables multidimensional correlation filtering and facilitates sub-shot-noise imaging. The code selectively identifies genuine photon-pair events while effectively suppressing uncorrelated background photons and detector noise. The output coincidence map (CM) directly reveals the underlying spatial correlation structure of the entangled photon pairs, providing a high-fidelity representation of their quantum correlations and serving as a robust foundation for advanced applications such as quantum imaging and quantum metrology.
 
 <p align="left">
 <img src="Theory.jpg", width='800'>
 </p>
 
 ## Reference
--  Yiqian Yang, Yunhui Gao, Jiachen Wu, Liangcai Cao, "Coincidence counting of quantum Gabor holography," xxx, xxx.
--  https://doi.org/xxx
+-  Yiqian Yang, Yunhui Gao, Jiachen Wu, Liangcai Cao, "Coincidence counting of quantum Gabor holography," Laser & Photonics Reviews (2026): e71223.
+-  https://doi.org/10.1002/lpor.71223
 
 ## Requirements
 -  MATLAB R2022a or newer versions
 
-## Function
--  Propagator function
--  FT
--  IFT
+## Array-based coincidence-counting algorithm
+-  Only coincident detections, which occur within the same frame at two spatially symmetric pixels, contribute to the correlation signal. For entangled photon pairs generated via spontaneous parametric down-conversion (SPDC), this method isolates the non-classical correlations that uniquely reveal the pairwise nature of the photon emission process. In quantum imaging, this coincidence counting approach preferentially selects correlated photon-pair events while suppressing uncorrelated background light and detector noise. The one-dimensional joint probability distribution (JPD) and two-dimensional CM provide a statistical framework that improves robustness of coincidence extraction and information retrieval for quantum Gabor holography (QGH). 
 
-## Object+SPDC algorithm
--  The generalization of the algorithm is validated under different entangled photon-pair utilizations.
 <p align="left">
-<img src="imgs/SIZE-A.gif", width="394"> &nbsp;
-<img src="imgs/SIZE-P.gif", width="394">
-<p align="left">
-
--  The robustness of the algorithm is verified in the presence of various levels of noise and loss.
-<p align="left">
-<img src="imgs/SNR-A.gif", width="394"> &nbsp;
-<img src="imgs/SNR-P.gif", width="394">
+<img src="Coincidence_Counting.jpg", width='800'>
 <p align="left">
 
 ## Source
